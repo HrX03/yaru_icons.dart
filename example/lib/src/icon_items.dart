@@ -62,6 +62,24 @@ final List<IconItem> animatedIconItems = [
       size: iconSize,
     ),
   ),
+  IconItem(
+    name: 'Music indicator',
+    usage: 'YaruAnimatedMusicIndicator()',
+    iconBuilder: (context, iconSize) => YaruAnimatedIcon(
+      const YaruAnimatedMusicIndicator(),
+      mode: YaruAnimationMode.repeat,
+      size: iconSize,
+    ),
+  ),
+  IconItem(
+    name: 'Music indicator linearly animated',
+    usage: 'YaruAnimatedMusicIndicator(linearlyAnimate: true)',
+    iconBuilder: (context, iconSize) => YaruAnimatedIcon(
+      const YaruAnimatedMusicIndicator(linearlyAnimate: true),
+      mode: YaruAnimationMode.repeat,
+      size: iconSize,
+    ),
+  ),
 ];
 
 final List<IconItem> widgetIconItems = [

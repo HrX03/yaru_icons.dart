@@ -15,12 +15,12 @@ const _kDefaultIndicatorThickness = 1.0;
 const _kDefaultDuration = Duration(milliseconds: 800);
 
 class YaruAnimatedMusicIndicator extends YaruAnimatedIconData {
-  const YaruAnimatedMusicIndicator({this.linearlyAnimate = true});
+  const YaruAnimatedMusicIndicator({this.linearlyAnimate = false});
 
   final bool linearlyAnimate;
 
   @override
-  Duration get duration => _kDefaultDuration;
+  Duration get defaultDuration => _kDefaultDuration;
 
   @override
   Widget build(
@@ -43,7 +43,7 @@ class YaruAnimatedMusicIndicatorWidget extends StatelessWidget {
     required this.progress,
     this.color,
     this.size = _kTargetCanvasSize,
-    this.linearlyAnimate = true,
+    this.linearlyAnimate = false,
     super.key,
   });
 
